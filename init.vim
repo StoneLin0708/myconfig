@@ -17,6 +17,7 @@ NeoBundle 'octol/vim-cpp-enhanced-highlight'
 NeoBundle 'vim-airline/vim-airline'
 NeoBundle 'vim-airline/vim-airline-themes'
 NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'rhysd/vim-clang-format'
 " NeoBundle 'Xuyuanp/nerdtree-git-plugin'
 
 call neobundle#end()
@@ -37,7 +38,7 @@ set smartindent
 set number
 set cursorline
 set mouse-=a
-
+autocmd BufRead,BufNewFile *.html setlocal filetype=html
 autocmd FileType html setlocal tabstop=4
 autocmd FileType html setlocal softtabstop=4
 autocmd FileType html setlocal shiftwidth=4
@@ -60,6 +61,7 @@ let g:airline_theme='simple'
 " NERD COMMENTER
 let g:NERDSpaceDelims = 1
 let g:NERDCompactSexyComs = 1
+let g:clang_format#command='clang-format-3.9'
 
 
 " let g:cpp_class_scope_highlight = 1
