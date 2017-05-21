@@ -8,6 +8,8 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " NeoBundle 'zchee/deoplete-clang'
 " NeoBundle 'kiddos/deoplete-cpp'
 
+NeoBundle 'tell-k/vim-autopep8'
+
 NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'flazz/vim-colorschemes'
@@ -18,6 +20,7 @@ NeoBundle 'vim-airline/vim-airline'
 NeoBundle 'vim-airline/vim-airline-themes'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'rhysd/vim-clang-format'
+" NeoBundle 'Valloric/YouCompleteMe'
 " NeoBundle 'Xuyuanp/nerdtree-git-plugin'
 
 call neobundle#end()
@@ -27,6 +30,7 @@ NeoBundleCheck
 " Basic setting
 set clipboard=unnamed,unnamedplus
 set encoding=utf-8
+set autoread
 
 set expandtab
 
@@ -39,6 +43,7 @@ set number
 set cursorline
 set mouse-=a
 autocmd BufRead,BufNewFile *.html setlocal filetype=html
+autocmd BufRead,BufNewFile *.h setlocal filetype=cpp
 autocmd FileType html setlocal tabstop=4
 autocmd FileType html setlocal softtabstop=4
 autocmd FileType html setlocal shiftwidth=4
@@ -63,6 +68,7 @@ let g:NERDSpaceDelims = 1
 let g:NERDCompactSexyComs = 1
 let g:clang_format#command='clang-format-3.9'
 
+let g:autopep8_disable_show_diff=1
 
 " let g:cpp_class_scope_highlight = 1
 
