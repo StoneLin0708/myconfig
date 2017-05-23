@@ -44,6 +44,10 @@ set cursorline
 set mouse-=a
 autocmd BufRead,BufNewFile *.html setlocal filetype=html
 autocmd BufRead,BufNewFile *.h setlocal filetype=cpp
+autocmd BufRead,BufNewFile *.py setlocal filetype=python
+autocmd FileType python setlocal tabstop=2
+autocmd FileType python setlocal softtabstop=2
+autocmd FileType python setlocal shiftwidth=2
 autocmd FileType html setlocal tabstop=4
 autocmd FileType html setlocal softtabstop=4
 autocmd FileType html setlocal shiftwidth=4
@@ -69,6 +73,8 @@ let g:NERDCompactSexyComs = 1
 let g:clang_format#command='clang-format-3.9'
 
 let g:autopep8_disable_show_diff=1
+
+let g:autopep8_indent_size=2
 
 " let g:cpp_class_scope_highlight = 1
 
