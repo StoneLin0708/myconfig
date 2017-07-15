@@ -20,6 +20,7 @@ NeoBundle 'vim-airline/vim-airline'
 NeoBundle 'vim-airline/vim-airline-themes'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'rhysd/vim-clang-format'
+NeoBundle 'tbastos/vim-lua'
 " NeoBundle 'Valloric/YouCompleteMe'
 " NeoBundle 'Xuyuanp/nerdtree-git-plugin'
 
